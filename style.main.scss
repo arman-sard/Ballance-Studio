@@ -1,0 +1,217 @@
+.mainContainer {
+
+  .mainCover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/img4.jpg");
+    background-position: center;
+    width: 100vw;
+    height: 95vh;
+
+    .mainCoverWrapper {
+      display: grid;
+      align-items: end;
+    }
+  }
+
+  .mainDescription {
+    background-color: #f2efef;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    .mainDescriptionWrapper {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      max-width: 200vw;
+
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      h1 {
+        padding: 3vw 0;
+      }
+
+      p {
+        font-size: 1.5vw;
+        padding: 0 6vw;
+      }
+    }
+  }
+
+  .mainServicePages {
+    background-color: #f2efef;
+    text-align: center;
+    padding-bottom: 7vw;
+
+    .mainServicePagesContent {
+      position: relative;
+      background-color: #ffffff;
+      display: inline-block;
+      margin: 1vw;
+      width: 22vw;
+      height: 100%;
+
+      img {
+        width: 100%;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      div {
+        padding: 2vw;
+
+        h3 {
+          padding-bottom: 1vw;
+        }
+
+      }
+    }
+  }
+
+  .mainSecondaryDescription {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5vw 20vw;
+
+    p {
+      font-size: 1.5vw;
+      padding: 5vw;
+    }
+  }
+
+  .mainGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    div, img {
+      width: 100%;
+      height: 30vw;
+      transition: transform 0.15s linear;
+      transition-property: transform;
+      transition-duration: 0.20s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .mainThirdDescription {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5vw 20vw;
+
+    p {
+      font-size: 1.3vw;
+      padding: 5vw;
+    }
+  }
+
+  .mainServiceGallery {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 15vw;
+
+    .mainFirstImg, .secondImg, .thirdImg, .fourthImg, .fifthImg, .sixthImg {
+      position: relative;
+      width: 100%;
+      height: 15vw;
+      background-image: url("/images/img15.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      transition: 1s;
+
+      &:hover {
+        transition: 1s;
+        background-size: 105%;
+      }
+
+      .hoverOpacity {
+        color: rgba(255, 255, 255, 0);
+        padding: 6vw 0;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        &:hover {
+          transition: 1s;
+          background-color: rgba(82, 37, 7, 0.6);
+
+          h2 {
+            transition: 1s;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+
+    .secondImg {
+      background-image: url("/images/img16.jpg");
+    }
+
+    .thirdImg {
+      background-image: url("/images/img17.jpg");
+    }
+
+    .fourthImg {
+      background-image: url("/images/img12.jpg");
+      background-size: 120%;
+
+      &:hover {
+        background-size: 125%;
+      }
+    }
+
+    .fifthImg {
+      background-image: url("/images/img18.jpg");
+    }
+
+    .sixthImg {
+      background-image: url("/images/img19.jpg");
+    }
+  }
+
+  .mainFourthDescription {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5vw 30vw;
+
+    .EquipmentLogo {
+      margin: 5vw auto 2vw;
+      background-image: url("/images/img_icon1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 8vw;
+      height: 8vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+      padding: 2vw;
+    }
+  }
+
+  .mainCatalog {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    .mainCatalogWrapper {
+      display: grid;
+
+    }
+  }
+}
